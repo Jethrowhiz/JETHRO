@@ -3,7 +3,11 @@ import { Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrandLogo } from './BrandLogo';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onOpenHire?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onOpenHire }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -75,12 +79,13 @@ export const Navbar: React.FC = () => {
 
         {/* Far Right: Rounded "Hire me" Button (matching mrbayo.dev) */}
         <div className="flex items-center gap-2.5">
-          <a
-            href="#contact"
+          <button
+            type="button"
+            onClick={onOpenHire}
             className="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-[#8B1E13] text-white hover:bg-[#70160D] shadow-sm hover:shadow hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
           >
             <span>Hire me</span>
-          </a>
+          </button>
 
           {/* Mobile Hamburger Toggle with Hover Box */}
           <button
@@ -118,14 +123,17 @@ export const Navbar: React.FC = () => {
                 </a>
               ))}
               <div className="pt-3 border-t border-gray-100">
-                <a
-                  href="#contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="inline-flex items-center justify-center w-full py-3 rounded-full font-bold bg-[#8B1E13] text-white shadow-sm hover:bg-[#70160D] transition-all"
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onOpenHire?.();
+                  }}
+                  className="inline-flex items-center justify-center w-full py-3 rounded-full font-bold bg-[#8B1E13] text-white shadow-sm hover:bg-[#70160D] transition-all cursor-pointer"
                 >
                   <span>Hire me</span>
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
+                </button>
               </div>
             </div>
           </motion.div>

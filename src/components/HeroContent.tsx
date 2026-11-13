@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 
 interface HeroContentProps {
   onSelectService?: (service: string) => void;
+  onOpenHire?: () => void;
 }
 
-export const HeroContent: React.FC<HeroContentProps> = () => {
+export const HeroContent: React.FC<HeroContentProps> = ({ onOpenHire }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 16 }}
@@ -44,12 +45,13 @@ export const HeroContent: React.FC<HeroContentProps> = () => {
           <span>See my work</span>
         </a>
 
-        <a
-          href="#contact"
+        <button
+          type="button"
+          onClick={onOpenHire}
           className="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm font-semibold bg-[#F3F4F6] text-[#111827] hover:bg-[#E5E7EB] shadow-sm hover:shadow transition-all duration-200 cursor-pointer text-center"
         >
           <span>Hire me</span>
-        </a>
+        </button>
       </div>
     </motion.div>
   );

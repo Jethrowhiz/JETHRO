@@ -5,9 +5,10 @@ import { TechnologyMarquee } from './TechnologyMarquee';
 
 interface HeroProps {
   onSelectService?: (service: string) => void;
+  onOpenHire?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onSelectService }) => {
+export const Hero: React.FC<HeroProps> = ({ onSelectService, onOpenHire }) => {
   return (
     <div className="relative w-full bg-white">
       {/* Main Responsive Hero Section with DM Sans font family and balanced scale */}
@@ -22,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onSelectService }) => {
             
             {/* Left Column (Desktop) / Sequential Content (Mobile) */}
             <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
-              <HeroContent onSelectService={onSelectService} />
+              <HeroContent onSelectService={onSelectService} onOpenHire={onOpenHire} />
             </div>
 
             {/* Right Column (Desktop only): Clean Circular Portrait */}

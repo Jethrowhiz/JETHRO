@@ -8,6 +8,7 @@ interface ProjectModalProps {
   initialTab?: 'preview' | 'code';
   isOpen: boolean;
   onClose: () => void;
+  onOpenHire?: () => void;
 }
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({
@@ -15,6 +16,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   initialTab = 'preview',
   isOpen,
   onClose,
+  onOpenHire,
 }) => {
   const [activeTab, setActiveTab] = useState<'preview' | 'code'>(initialTab);
 
@@ -160,14 +162,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
             {/* Bottom Actions */}
             <div className="pt-5 mt-5 sm:pt-6 sm:mt-6 border-t border-[#E8DAC4] flex flex-wrap items-center justify-between gap-3">
-              <a
-                href="#contact"
-                onClick={onClose}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-[#54230F] text-[#FFF9EE] hover:bg-[#713315] transition-all text-center"
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                  onOpenHire?.();
+                }}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-[#54230F] text-[#FFF9EE] hover:bg-[#713315] transition-all text-center cursor-pointer"
               >
                 <span>Inquire About Similar Architecture</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </button>
 
               <a
                 href={project.url.startsWith('http') ? project.url : `https://${project.url}`}

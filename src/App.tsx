@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { AboutModal } from './components/Modals/AboutModal';
 import { ProjectModal } from './components/Modals/ProjectModal';
 import { SuccessModal } from './components/Modals/SuccessModal';
+import { HireModal } from './components/Modals/HireModal';
 import { Project } from './types';
 import { Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [projectModalTab, setProjectModalTab] = useState<'preview' | 'code'>('preview');
   const [projectModalOpen, setProjectModalOpen] = useState(false);
+  const [hireModalOpen, setHireModalOpen] = useState(false);
   const [successModalOpen, setSuccessModalOpen] = useState(false);
   const [successSender, setSuccessSender] = useState('');
   const [selectedService, setSelectedService] = useState('Frontend Development');
@@ -59,12 +61,15 @@ export const App: React.FC = () => {
       <PageLoader />
 
       {/* 1. Permanent Sticky Navigation with Reading Progress Bar */}
-      <Navbar />
+      <Navbar onOpenHire={() => setHireModalOpen(true)} />
 
       {/* Main Content with offset to accommodate the slim fixed sticky navbar */}
       <main className="flex-1 pt-12 sm:pt-14">
         {/* 2. Hero Section */}
-        <Hero onSelectService={(srv) => setSelectedService(srv)} />
+        <Hero
+          onSelectService={(srv) => setSelectedService(srv)}
+          onOpenHire={() => setHireModalOpen(true)}
+        />
 
         {/* 2.5 Animated Key Metrics Strip (Before "Things I have built") */}
         <HighlightsStrip />
@@ -97,6 +102,13 @@ export const App: React.FC = () => {
         project={selectedProject}
         initialTab={projectModalTab}
         onClose={() => setProjectModalOpen(false)}
+        onOpenHire={() => setHireModalOpen(true)}
+      />
+
+      <HireModal
+        isOpen={hireModalOpen}
+        onClose={() => setHireModalOpen(false)}
+        onSuccess={handleContactSuccess}
       />
 
       <SuccessModal
