@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface HireModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSuccess: (name: string) => void;
+  onSuccess: (name: string, reachChannel?: string) => void;
 }
 
 type ProjectType = 'Mobile app' | 'Web app' | 'AI system' | 'Other';
@@ -53,7 +53,7 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
 
     setTimeout(() => {
       setIsSubmitting(false);
-      onSuccess(name);
+      onSuccess(name, reachMethod);
       onClose();
 
       // If WhatsApp preferred, also optionally open direct conversation
@@ -288,3 +288,4 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
     </AnimatePresence>
   );
 };
+

@@ -24,6 +24,7 @@ export const App: React.FC = () => {
   const [hireModalOpen, setHireModalOpen] = useState(false);
   const [successModalOpen, setSuccessModalOpen] = useState(false);
   const [successSender, setSuccessSender] = useState('');
+  const [successChannel, setSuccessChannel] = useState('WhatsApp');
   const [selectedService, setSelectedService] = useState('Frontend Development');
 
   // Global Toast
@@ -50,8 +51,9 @@ export const App: React.FC = () => {
     setProjectModalOpen(true);
   };
 
-  const handleContactSuccess = (name: string) => {
+  const handleContactSuccess = (name: string, channel: string = 'WhatsApp') => {
     setSuccessSender(name);
+    setSuccessChannel(channel);
     setSuccessModalOpen(true);
   };
 
@@ -114,6 +116,7 @@ export const App: React.FC = () => {
       <SuccessModal
         isOpen={successModalOpen}
         senderName={successSender}
+        reachChannel={successChannel}
         onClose={() => setSuccessModalOpen(false)}
       />
 
