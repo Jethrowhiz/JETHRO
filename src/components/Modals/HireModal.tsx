@@ -44,6 +44,11 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
       return;
     }
 
+    if (reachMethod === 'Email' && !email.trim()) {
+      setErrorMsg('Please enter your email address.');
+      return;
+    }
+
     if (!email.trim() && !phone.trim()) {
       setErrorMsg('Please provide either an email or phone number.');
       return;
@@ -56,8 +61,23 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
       onSuccess(name, reachMethod);
       onClose();
 
+      // If Email preferred, directly open default email client addressed to Jethro
+      if (reachMethod === 'Email') {
+        const subject = encodeURIComponent(`Project Inquiry: ${projectType} from ${name}`);
+        const body = encodeURIComponent(
+          `Hi Jethro,\n\n` +
+          `I would like to discuss a project with you:\n\n` +
+          `• Name: ${name}\n` +
+          `• Project Type: ${projectType}\n` +
+          (email ? `• Client Email: ${email}\n` : '') +
+          (phone ? `• Client Phone: ${phone}\n` : '') +
+          `\nProject Description:\n${description || 'N/A'}\n\n` +
+          `Best regards,\n${name}`
+        );
+        window.location.href = `mailto:jethrosamson13@gmail.com?subject=${subject}&body=${body}`;
+      }
       // If WhatsApp preferred, automatically send to WhatsApp without opening a new tab/page
-      if (reachMethod === 'WhatsApp') {
+      else if (reachMethod === 'WhatsApp') {
         const text = encodeURIComponent(
           `Hi Jethro, my name is ${name}. I would like to discuss a project:\n` +
           `• Project Type: ${projectType}\n` +
