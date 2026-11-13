@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C47A3E"/>
+      <stop offset="60%" stop-color="#713315"/>
+      <stop offset="100%" stop-color="#3D1708"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="24" fill="url(#phoneGrad)"/>
+
+  <!-- Sleek Mobile Phone Frame -->
+  <rect x="95" y="45" width="210" height="390" rx="36" fill="#171310" stroke="#FFF9EE" stroke-width="2" stroke-opacity="0.3"/>
+  <!-- Dynamic Island -->
+  <rect x="165" y="58" width="70" height="18" rx="9" fill="#2C1207"/>
+
+  <!-- Phone Screen Content -->
+  <rect x="105" y="85" width="190" height="340" rx="26" fill="#FFF9EE"/>
+
+  <!-- Mobile App UI Simulation -->
+  <!-- Top bar -->
+  <rect x="120" y="105" width="40" height="8" rx="4" fill="#54230F"/>
+  <circle cx="280" cy="109" r="6" fill="#C47A3E"/>
+
+  <!-- Hero Banner on Mobile -->
+  <rect x="120" y="125" width="160" height="80" rx="14" fill="#54230F"/>
+  <rect x="130" y="140" width="90" height="8" rx="4" fill="#E8A65D"/>
+  <rect x="130" y="155" width="130" height="6" rx="3" fill="#FFF9EE" opacity="0.8"/>
+  <rect x="130" y="175" width="60" height="18" rx="9" fill="#FFF9EE"/>
+
+  <!-- 2 Feature cards in grid -->
+  <rect x="120" y="220" width="75" height="85" rx="12" fill="#F6EBD6" stroke="#E8DAC4" stroke-width="1"/>
+  <circle cx="140" cy="245" r="10" fill="#C47A3E"/>
+  <rect x="130" y="265" width="55" height="5" rx="2" fill="#171310"/>
+  <rect x="130" y="275" width="40" height="4" rx="2" fill="#7A695E"/>
+
+  <rect x="205" y="220" width="75" height="85" rx="12" fill="#F6EBD6" stroke="#E8DAC4" stroke-width="1"/>
+  <circle cx="225" cy="245" r="10" fill="#E8A65D"/>
+  <rect x="215" y="265" width="55" height="5" rx="2" fill="#171310"/>
+  <rect x="215" y="275" width="40" height="4" rx="2" fill="#7A695E"/>
+
+  <!-- Bottom CTA bar -->
+  <rect x="120" y="320" width="160" height="35" rx="12" fill="#C47A3E"/>
+  <rect x="155" y="333" width="90" height="8" rx="4" fill="#FFF9EE"/>
+
+  <!-- Phone home indicator -->
+  <rect x="160" y="415" width="80" height="4" rx="2" fill="#713315"/>
+
+  <text x="35" y="475" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#FFF9EE" letter-spacing="1">RESPONSIVE PERFECTION</text>
+</svg>
+

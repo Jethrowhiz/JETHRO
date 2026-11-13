@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="deskGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E8A65D" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#C47A3E" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#54230F" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" rx="24" fill="url(#deskGlow)"/>
+
+  <!-- Minimalist Desk Scene -->
+  <!-- Warm Desk Surface -->
+  <rect x="0" y="320" width="400" height="180" fill="#3D1708"/>
+  <line x1="0" y1="320" x2="400" y2="320" stroke="#E8A65D" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- MacBook Laptop Front View -->
+  <!-- Screen Lid -->
+  <rect x="90" y="160" width="220" height="145" rx="10" fill="#171310" stroke="#FFF9EE" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Display Interior with glowing warm editor -->
+  <rect x="98" y="168" width="204" height="129" rx="6" fill="#2C1207"/>
+  <!-- Screen lines -->
+  <rect x="110" y="185" width="80" height="6" rx="3" fill="#E8A65D" opacity="0.8"/>
+  <rect x="110" y="200" width="120" height="4" rx="2" fill="#FFF9EE" opacity="0.6"/>
+  <rect x="110" y="212" width="100" height="4" rx="2" fill="#C47A3E" opacity="0.7"/>
+  <rect x="110" y="224" width="140" height="4" rx="2" fill="#FFF9EE" opacity="0.4"/>
+  <circle cx="270" cy="245" r="16" fill="#E8A65D" opacity="0.3"/>
+
+  <!-- Laptop Base & Trackpad -->
+  <path d="M 70 305 L 330 305 L 315 315 L 85 315 Z" fill="#713315" stroke="#C47A3E" stroke-width="1"/>
+  <rect x="170" y="307" width="60" height="4" rx="2" fill="#E8A65D" opacity="0.5"/>
+
+  <!-- Minimal Ceramic Coffee Mug -->
+  <ellipse cx="60" cy="350" rx="18" ry="8" fill="#FFF9EE"/>
+  <rect x="42" y="350" width="36" height="40" rx="4" fill="#F6EBD6"/>
+  <ellipse cx="60" cy="390" rx="18" ry="8" fill="#E8DAC4"/>
+  <path d="M 78 358 C 88 362, 88 378, 78 382" fill="none" stroke="#F6EBD6" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Warm Architect Lamp Light Beam -->
+  <polygon points="340,80 390,80 430,340 280,340" fill="#FFF9EE" opacity="0.08"/>
+  <circle cx="365" cy="80" r="14" fill="#E8A65D" opacity="0.9"/>
+
+  <text x="35" y="465" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#FFF9EE" letter-spacing="1">MODERN WORKSPACE</text>
+</svg>
+

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="solsticeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D1708"/>
+      <stop offset="60%" stop-color="#240D04"/>
+      <stop offset="100%" stop-color="#120601"/>
+    </linearGradient>
+
+    <radialGradient id="solsticeGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E8A65D" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#C47A3E" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#3D1708" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#solsticeBg)"/>
+  <rect width="1200" height="750" fill="url(#solsticeGlow)"/>
+
+  <!-- Browser Header -->
+  <rect x="40" y="30" width="1120" height="48" rx="14" fill="#200E06" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <circle cx="70" cy="54" r="6" fill="#E8A65D"/>
+  <circle cx="90" cy="54" r="6" fill="#C47A3E"/>
+  <circle cx="110" cy="54" r="6" fill="#713315"/>
+  <rect x="150" y="40" width="380" height="28" rx="8" fill="rgba(255, 255, 255, 0.05)"/>
+  <text x="170" y="58" font-family="Space Mono, monospace" font-size="12" fill="#FFF9EE" opacity="0.6">https://checkout.solsticepay.io/pay/inv_9934</text>
+
+  <!-- Centered Modal Checkout Widget Container -->
+  <g transform="translate(370, 110)">
+    <!-- Modal Card -->
+    <rect x="0" y="0" width="460" height="580" rx="26" fill="#2A140A" stroke="#E8A65D" stroke-opacity="0.35" stroke-width="1.5" filter="drop-shadow(0 25px 50px rgba(0,0,0,0.6))"/>
+
+    <!-- Merchant Header -->
+    <circle cx="48" cy="48" r="18" fill="#54230F" stroke="#E8A65D" stroke-width="1"/>
+    <text x="40" y="54" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" fill="#E8A65D">S</text>
+    <text x="76" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="700" fill="#FFF9EE">Studio Nordik Goods</text>
+    <text x="76" y="60" font-family="Space Mono, monospace" font-size="10" fill="#E8A65D">INVOICE #99342 · VERIFIED</text>
+    <rect x="370" y="36" width="60" height="22" rx="11" fill="rgba(34, 197, 94, 0.15)"/>
+    <text x="382" y="51" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" fill="#22C55E">TESTNET</text>
+
+    <line x1="24" y1="88" x2="436" y2="88" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Amount Due -->
+    <text x="230" y="130" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#E8A65D">AMOUNT DUE</text>
+    <text x="230" y="175" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800" fill="#FFF9EE">$340.00 <tspan font-size="16" font-weight="500" fill="#C47A3E">USDC</tspan></text>
+
+    <!-- Token Selector Tabs -->
+    <g transform="translate(30, 205)">
+      <rect x="0" y="0" width="125" height="42" rx="12" fill="#54230F" stroke="#E8A65D" stroke-width="1.5"/>
+      <circle cx="24" cy="21" r="10" fill="#2775CA"/>
+      <text x="42" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">USDC</text>
+
+      <rect x="135" y="0" width="125" height="42" rx="12" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <circle cx="159" cy="21" r="10" fill="#627EEA"/>
+      <text x="177" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE" opacity="0.6">ETH</text>
+
+      <rect x="270" y="0" width="130" height="42" rx="12" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <circle cx="294" cy="21" r="10" fill="#26A17B"/>
+      <text x="312" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE" opacity="0.6">USDT</text>
+    </g>
+
+    <!-- QR Code & Gas Telemetry -->
+    <g transform="translate(145, 275)">
+      <rect x="0" y="0" width="170" height="170" rx="16" fill="#FFF9EE"/>
+      <!-- QR Pattern -->
+      <g fill="#2D1207">
+        <rect x="15" y="15" width="40" height="40" rx="6"/>
+        <rect x="23" y="23" width="24" height="24" rx="3" fill="#FFF9EE"/>
+        <rect x="29" y="29" width="12" height="12" fill="#2D1207"/>
+
+        <rect x="115" y="15" width="40" height="40" rx="6"/>
+        <rect x="123" y="23" width="24" height="24" rx="3" fill="#FFF9EE"/>
+        <rect x="129" y="29" width="12" height="12" fill="#2D1207"/>
+
+        <rect x="15" y="115" width="40" height="40" rx="6"/>
+        <rect x="23" y="123" width="24" height="24" rx="3" fill="#FFF9EE"/>
+        <rect x="29" y="129" width="12" height="12" fill="#2D1207"/>
+
+        <!-- Dot matrix blocks -->
+        <rect x="70" y="20" width="12" height="12"/>
+        <rect x="90" y="30" width="12" height="12"/>
+        <rect x="65" y="65" width="40" height="40" rx="4" fill="#C47A3E"/>
+        <circle cx="85" cy="85" r="8" fill="#FFF9EE"/>
+        <rect x="120" y="70" width="14" height="14"/>
+        <rect x="70" y="120" width="12" height="25"/>
+        <rect x="100" y="130" width="25" height="15"/>
+        <rect x="135" y="115" width="15" height="20"/>
+      </g>
+    </g>
+
+    <!-- Pay with Web3 Extension Button -->
+    <rect x="30" y="475" width="400" height="50" rx="25" fill="#E8A65D"/>
+    <text x="230" y="506" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="800" fill="#3D1708">CONNECT WALLET &amp; PAY ↗</text>
+
+    <!-- Micro info footer -->
+    <text x="230" y="550" text-anchor="middle" font-family="Space Mono, monospace" font-size="10" fill="#FFF9EE" opacity="0.5">Automated Gas Estimation: &lt; $0.02 (Arbitrum L2)</text>
+  </g>
+</svg>
+

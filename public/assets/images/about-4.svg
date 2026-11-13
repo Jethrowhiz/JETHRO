@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="web3Grad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#713315"/>
+      <stop offset="50%" stop-color="#54230F"/>
+      <stop offset="100%" stop-color="#2D1207"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" rx="24" fill="url(#web3Grad)"/>
+
+  <!-- Decentralized Network Graph Lines -->
+  <g stroke="#E8A65D" stroke-width="1.5" stroke-opacity="0.35">
+    <line x1="120" y1="120" x2="280" y2="100"/>
+    <line x1="280" y1="100" x2="330" y2="240"/>
+    <line x1="120" y1="120" x2="80" y2="260"/>
+    <line x1="80" y1="260" x2="200" y2="220"/>
+    <line x1="200" y1="220" x2="330" y2="240"/>
+    <line x1="200" y1="220" x2="160" y2="350"/>
+    <line x1="330" y1="240" x2="280" y2="370"/>
+    <line x1="160" y1="350" x2="280" y2="370"/>
+  </g>
+
+  <!-- Glowing Golden Nodes -->
+  <!-- Node 1 -->
+  <circle cx="120" cy="120" r="14" fill="#C47A3E" stroke="#E8A65D" stroke-width="2"/>
+  <circle cx="120" cy="120" r="5" fill="#FFF9EE"/>
+  <!-- Node 2 -->
+  <circle cx="280" cy="100" r="12" fill="#713315" stroke="#E8A65D" stroke-width="2"/>
+  <circle cx="280" cy="100" r="4" fill="#FFF9EE"/>
+  <!-- Central Hub Node -->
+  <circle cx="200" cy="220" r="28" fill="#54230F" stroke="#E8A65D" stroke-width="3"/>
+  <circle cx="200" cy="220" r="12" fill="#E8A65D"/>
+  <circle cx="200" cy="220" r="5" fill="#FFF9EE"/>
+  <!-- Node 4 -->
+  <circle cx="330" cy="240" r="16" fill="#C47A3E" stroke="#E8A65D" stroke-width="2"/>
+  <!-- Node 5 -->
+  <circle cx="80" cy="260" r="15" fill="#713315" stroke="#E8A65D" stroke-width="2"/>
+  <!-- Node 6 -->
+  <circle cx="160" cy="350" r="14" fill="#C47A3E" stroke="#E8A65D" stroke-width="2"/>
+  <!-- Node 7 -->
+  <circle cx="280" cy="370" r="18" fill="#54230F" stroke="#E8A65D" stroke-width="2"/>
+
+  <!-- Hash / Block details -->
+  <rect x="50" y="400" width="300" height="45" rx="12" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(232, 166, 93, 0.3)" stroke-width="1"/>
+  <text x="70" y="428" font-family="Space Mono, monospace" font-size="11" fill="#E8A65D">BLOCK #19284729 · VERIFIED</text>
+
+  <text x="35" y="475" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#FFF9EE" letter-spacing="1">WEB3 &amp; DECENTRALIZED PROTOCOLS</text>
+</svg>
+

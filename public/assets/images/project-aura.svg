@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9EE"/>
+      <stop offset="100%" stop-color="#F6EBD6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#auraBg)"/>
+
+  <!-- Browser Frame Header -->
+  <rect x="40" y="30" width="1120" height="48" rx="14" fill="#FFFFFF" stroke="#E8DAC4" stroke-width="1.5"/>
+  <circle cx="70" cy="54" r="6" fill="#C47A3E"/>
+  <circle cx="90" cy="54" r="6" fill="#E8A65D"/>
+  <circle cx="110" cy="54" r="6" fill="#713315"/>
+  <!-- URL Bar -->
+  <rect x="150" y="40" width="380" height="28" rx="8" fill="#F6EBD6"/>
+  <text x="170" y="58" font-family="Space Mono, monospace" font-size="12" fill="#713315">https://aurastudio.design</text>
+
+  <!-- Site Content -->
+  <!-- Top Navigation inside website -->
+  <g transform="translate(80, 115)">
+    <text x="0" y="24" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="800" fill="#171310" letter-spacing="-0.5">AURA ARCHITECTURE.</text>
+    <text x="640" y="22" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#713315">Projects</text>
+    <text x="730" y="22" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#713315">Monographs</text>
+    <text x="850" y="22" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#713315">Philosophy</text>
+    <rect x="960" y="2" width="80" height="32" rx="16" fill="#54230F"/>
+    <text x="980" y="22" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#FFF9EE">INQUIRE</text>
+  </g>
+
+  <!-- Hero Content -->
+  <g transform="translate(80, 185)">
+    <!-- Small Category -->
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#E8A65D" opacity="0.2"/>
+    <text x="14" y="17" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#54230F" letter-spacing="1">RESIDENTIAL &amp; CULTURAL</text>
+
+    <!-- Large Editorial Heading -->
+    <text x="0" y="70" font-family="Plus Jakarta Sans, sans-serif" font-size="52" font-weight="800" fill="#171310" letter-spacing="-1.5">Monolithic Spaces</text>
+    <text x="0" y="130" font-family="Plus Jakarta Sans, sans-serif" font-size="52" font-weight="800" fill="#C47A3E" letter-spacing="-1.5">Crafted in Warm Stone.</text>
+
+    <text x="0" y="180" font-family="Plus Jakarta Sans, sans-serif" font-size="16" fill="#7A695E" max-width="450">
+      Sculpting natural light, earthen textures, and sustainable timber into timeless dwellings.
+    </text>
+
+    <rect x="0" y="220" width="190" height="48" rx="24" fill="#54230F"/>
+    <text x="35" y="250" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="700" fill="#FFF9EE">View Retrospective →</text>
+  </g>
+
+  <!-- Architectural Showcase Images (Right Column) -->
+  <g transform="translate(680, 185)">
+    <!-- Main Big Image Frame -->
+    <rect x="0" y="0" width="440" height="340" rx="24" fill="#54230F"/>
+    <!-- Architectural Pavilion illustration -->
+    <path d="M 40 280 L 180 80 L 400 80 L 400 280 Z" fill="#713315"/>
+    <polygon points="180,80 240,40 440,40 400,80" fill="#C47A3E"/>
+    <!-- Glass facade reflection -->
+    <polygon points="80,280 180,120 360,120 360,280" fill="#E8A65D" opacity="0.3"/>
+    <line x1="140" y1="120" x2="140" y2="280" stroke="#FFF9EE" stroke-width="2" opacity="0.5"/>
+    <line x1="220" y1="120" x2="220" y2="280" stroke="#FFF9EE" stroke-width="2" opacity="0.5"/>
+    <line x1="300" y1="120" x2="300" y2="280" stroke="#FFF9EE" stroke-width="2" opacity="0.5"/>
+
+    <!-- Floating Caption Pill -->
+    <rect x="30" y="275" width="230" height="36" rx="18" fill="rgba(23, 19, 16, 0.85)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+    <text x="48" y="298" font-family="Space Mono, monospace" font-size="11" fill="#FFF9EE">Kyoto Pavilion · 2026 Completed</text>
+  </g>
+
+  <!-- Bottom Spec Strip -->
+  <g transform="translate(80, 570)">
+    <line x1="0" y1="0" x2="1040" y2="0" stroke="#E8DAC4" stroke-width="1.5"/>
+    <text x="0" y="40" font-family="Space Mono, monospace" font-size="12" fill="#713315">01 / SUSTAINABILITY: NET ZERO</text>
+    <text x="360" y="40" font-family="Space Mono, monospace" font-size="12" fill="#713315">02 / MATERIALS: EARTHEN CONCRETE</text>
+    <text x="760" y="40" font-family="Space Mono, monospace" font-size="12" fill="#713315">03 / PERFORMANCE: 60FPS SMOOTH</text>
+  </g>
+</svg>
+

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="creamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9EE"/>
+      <stop offset="100%" stop-color="#F6EBD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="24" fill="url(#creamGrad)"/>
+  
+  <!-- Architectural Layout Grid Specimen -->
+  <g stroke="#C47A3E" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="30" y1="40" x2="370" y2="40"/>
+    <line x1="30" y1="180" x2="370" y2="180"/>
+    <line x1="30" y1="320" x2="370" y2="320"/>
+    <line x1="30" y1="40" x2="30" y2="460"/>
+    <line x1="200" y1="40" x2="200" y2="460"/>
+    <line x1="370" y1="40" x2="370" y2="460"/>
+  </g>
+
+  <!-- Typography Specimen -->
+  <text x="35" y="90" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800" fill="#171310" letter-spacing="-1">Aa Bb 01</text>
+  <text x="35" y="125" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#713315">Design Systems &amp; Type Hierarchy</text>
+  <text x="35" y="150" font-family="Space Mono, monospace" font-size="11" fill="#7A695E">scale: 1.25 (Major Third) · 8pt Grid</text>
+
+  <!-- Palette Swatches -->
+  <g transform="translate(35, 195)">
+    <!-- Swatch 1 -->
+    <rect x="0" y="0" width="70" height="70" rx="14" fill="#54230F" stroke="#E8DAC4" stroke-width="1"/>
+    <text x="6" y="88" font-family="Space Mono, monospace" font-size="9" fill="#171310">#54230F</text>
+    <!-- Swatch 2 -->
+    <rect x="85" y="0" width="70" height="70" rx="14" fill="#713315" stroke="#E8DAC4" stroke-width="1"/>
+    <text x="91" y="88" font-family="Space Mono, monospace" font-size="9" fill="#171310">#713315</text>
+    <!-- Swatch 3 -->
+    <rect x="170" y="0" width="70" height="70" rx="14" fill="#C47A3E" stroke="#E8DAC4" stroke-width="1"/>
+    <text x="176" y="88" font-family="Space Mono, monospace" font-size="9" fill="#171310">#C47A3E</text>
+    <!-- Swatch 4 -->
+    <rect x="255" y="0" width="70" height="70" rx="14" fill="#E8A65D" stroke="#E8DAC4" stroke-width="1"/>
+    <text x="261" y="88" font-family="Space Mono, monospace" font-size="9" fill="#171310">#E8A65D</text>
+  </g>
+
+  <!-- UI Token Card -->
+  <rect x="35" y="325" width="330" height="100" rx="18" fill="#FFFFFF" stroke="#E8DAC4" stroke-width="1.5"/>
+  <rect x="55" y="345" width="40" height="40" rx="10" fill="#FFF9EE" stroke="#E8A65D" stroke-width="1.5"/>
+  <circle cx="75" cy="365" r="8" fill="#C47A3E"/>
+  <text x="110" y="360" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#171310">Precision UI Components</text>
+  <text x="110" y="378" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7A695E">WCAG AAA compliant contrast &amp; fluid tokens</text>
+
+  <text x="35" y="465" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#713315" letter-spacing="1">SYSTEMATIC CRAFT</text>
+</svg>
+

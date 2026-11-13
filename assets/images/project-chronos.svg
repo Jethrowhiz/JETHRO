@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chronosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E140E"/>
+      <stop offset="100%" stop-color="#120A06"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#chronosBg)"/>
+
+  <!-- Browser Header -->
+  <rect x="40" y="30" width="1120" height="48" rx="14" fill="#281A12" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <circle cx="70" cy="54" r="6" fill="#E8A65D"/>
+  <circle cx="90" cy="54" r="6" fill="#C47A3E"/>
+  <circle cx="110" cy="54" r="6" fill="#713315"/>
+  <rect x="150" y="40" width="380" height="28" rx="8" fill="rgba(255, 255, 255, 0.05)"/>
+  <text x="170" y="58" font-family="Space Mono, monospace" font-size="12" fill="#FFF9EE" opacity="0.6">https://app.chronos.dev/workspace/sprint-44</text>
+
+  <!-- Left Sidebar inside App -->
+  <g transform="translate(40, 95)">
+    <rect x="0" y="0" width="220" height="615" rx="18" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
+    
+    <!-- User Workspace -->
+    <circle cx="36" cy="36" r="14" fill="#C47A3E"/>
+    <text x="31" y="41" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">JS</text>
+    <text x="60" y="35" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">Engineering Lab</text>
+    <text x="60" y="50" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#E8A65D">Team Pro Tier</text>
+
+    <!-- Navigation Items -->
+    <rect x="14" y="90" width="192" height="36" rx="10" fill="rgba(232, 166, 93, 0.15)"/>
+    <text x="40" y="113" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="#E8A65D">Active Board</text>
+
+    <text x="40" y="155" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="500" fill="#FFF9EE" opacity="0.7">Backlog &amp; Roadmaps</text>
+    <text x="40" y="195" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="500" fill="#FFF9EE" opacity="0.7">API Integrations</text>
+    <text x="40" y="235" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="500" fill="#FFF9EE" opacity="0.7">Team Analytics</text>
+    <text x="40" y="275" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="500" fill="#FFF9EE" opacity="0.7">Settings</text>
+  </g>
+
+  <!-- Main Kanban Board -->
+  <g transform="translate(280, 95)">
+    <!-- Top Bar with Search & Avatars -->
+    <rect x="0" y="0" width="880" height="50" rx="14" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
+    <text x="24" y="32" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#FFF9EE">Sprint 44: Web3 Bridge &amp; UI Polish</text>
+    <!-- Filter Chips -->
+    <rect x="360" y="12" width="90" height="26" rx="13" fill="#54230F" stroke="#C47A3E" stroke-width="1"/>
+    <text x="375" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#E8A65D">All Tasks (18)</text>
+
+    <circle cx="760" cy="25" r="13" fill="#713315"/>
+    <circle cx="780" cy="25" r="13" fill="#C47A3E"/>
+    <circle cx="800" cy="25" r="13" fill="#E8A65D"/>
+    <circle cx="820" cy="25" r="13" fill="#54230F"/>
+
+    <!-- Column 1: In Review -->
+    <g transform="translate(0, 75)">
+      <rect x="0" y="0" width="275" height="540" rx="16" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+      <text x="18" y="32" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#E8A65D">IN REVIEW (4)</text>
+
+      <!-- Task Card 1 -->
+      <rect x="14" y="55" width="247" height="135" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <rect x="26" y="70" width="60" height="20" rx="10" fill="#54230F"/>
+      <text x="34" y="84" font-family="Space Mono, monospace" font-size="9" fill="#E8A65D">#ENG-102</text>
+      <text x="26" y="112" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">Migrate Zustand store to v5</text>
+      <text x="26" y="130" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#FFF9EE" opacity="0.6">State machine optimizations</text>
+      <circle cx="230" cy="160" r="10" fill="#C47A3E"/>
+
+      <!-- Task Card 2 -->
+      <rect x="14" y="205" width="247" height="135" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <rect x="26" y="220" width="60" height="20" rx="10" fill="#713315"/>
+      <text x="34" y="234" font-family="Space Mono, monospace" font-size="9" fill="#FFF9EE">#A11Y-88</text>
+      <text x="26" y="262" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">Audit keyboard focus traps</text>
+      <text x="26" y="280" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#FFF9EE" opacity="0.6">WCAG 2.2 focus visible compliance</text>
+      <circle cx="230" cy="310" r="10" fill="#E8A65D"/>
+    </g>
+
+    <!-- Column 2: In Development -->
+    <g transform="translate(300, 75)">
+      <rect x="0" y="0" width="275" height="540" rx="16" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+      <text x="18" y="32" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#C47A3E">IN PROGRESS (3)</text>
+
+      <rect x="14" y="55" width="247" height="150" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="#E8A65D" stroke-width="1.5"/>
+      <rect x="26" y="70" width="75" height="20" rx="10" fill="#C47A3E"/>
+      <text x="34" y="84" font-family="Space Mono, monospace" font-size="9" fill="#FFF9EE">#CORE-219</text>
+      <text x="26" y="112" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">WebSocket Real-Time Sync</text>
+      <text x="26" y="130" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#FFF9EE" opacity="0.6">Sub-50ms peer cursor syncing</text>
+      <!-- Progress Bar -->
+      <rect x="26" y="150" width="180" height="6" rx="3" fill="rgba(255, 255, 255, 0.1)"/>
+      <rect x="26" y="150" width="135" height="6" rx="3" fill="#E8A65D"/>
+      <circle cx="230" cy="175" r="10" fill="#54230F"/>
+    </g>
+
+    <!-- Column 3: Production Ready -->
+    <g transform="translate(600, 75)">
+      <rect x="0" y="0" width="275" height="540" rx="16" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+      <text x="18" y="32" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#22C55E">DEPLOYED (11)</text>
+
+      <rect x="14" y="55" width="247" height="135" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <rect x="26" y="70" width="80" height="20" rx="10" fill="#1A3826"/>
+      <text x="34" y="84" font-family="Space Mono, monospace" font-size="9" fill="#22C55E">#DEPLOY-90</text>
+      <text x="26" y="112" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#FFF9EE">Edge Cache Invalidation</text>
+      <text x="26" y="130" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#22C55E">✓ Live on production edge</text>
+    </g>
+  </g>
+</svg>
+
