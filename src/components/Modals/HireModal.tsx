@@ -56,7 +56,7 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
       onSuccess(name, reachMethod);
       onClose();
 
-      // If WhatsApp preferred, also optionally open direct conversation
+      // If WhatsApp preferred, automatically send to WhatsApp without opening a new tab/page
       if (reachMethod === 'WhatsApp') {
         const text = encodeURIComponent(
           `Hi Jethro, my name is ${name}. I would like to discuss a project:\n` +
@@ -65,7 +65,25 @@ export const HireModal: React.FC<HireModalProps> = ({ isOpen, onClose, onSuccess
           (email ? `• Email: ${email}\n` : '') +
           (description ? `• Details: ${description}` : '')
         );
-        window.open(`https://wa.me/2349124294337?text=${text}`, '_blank');
+
+        const isMobile =
+          typeof navigator !== 'undefined' &&
+          /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+        const waProtocol = `whatsapp://send?phone=2349124294337&text=${text}`;
+        const waWeb = `https://api.whatsapp.com/send?phone=2349124294337&text=${text}`;
+
+        if (isMobile) {
+          // On mobile, automatically opens the WhatsApp app directly
+          window.location.href = waProtocol;
+        } else {
+          // On desktop, trigger WhatsApp app directly without new page; fallback in-place
+          window.location.href = waProtocol;
+          setTimeout(() => {
+            if (document.hasFocus()) {
+              window.location.href = waWeb;
+            }
+          }, 1200);
+        }
       }
 
       // Reset fields
